@@ -12,8 +12,8 @@ arr = [1,4,3,5,8,6]
 # class solution:
 #     def minMax(self, arr):
 
-max_arr = arr[0]
-min_arr = arr[0] 
+max_arr = 0
+min_arr = 0 
 
 for num in arr[1:]:
     if num < min_arr:
