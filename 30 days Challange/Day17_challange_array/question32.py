@@ -19,14 +19,14 @@ list = []
 for i in range (len(arr)):
     if arr[i] < x:
         count += 1
-        list.append(i)
+        list.append(arr[i])
     else:
         continue
 print(count)
 print(list)
 
-arr = [10,1,2,8,4,5]
-x = 9
+arr = [1,2,2,2,5,6,]
+x = 5
 count = 0
 list = []
 
