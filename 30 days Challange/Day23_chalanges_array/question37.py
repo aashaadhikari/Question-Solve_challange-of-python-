@@ -6,30 +6,30 @@ Note: The pairs must be returned in sorted order, the solution array should also
 Examples:
 """
 
-# arr = [-1, 6, 0, 1, 2, -1, -4, -6]
+arr = [-1, 6, 0, 1, 2, -1, -4, -6]
 
-# arr.sort()
-# empty_list = []
 
-# i = 0
-# j = len(arr)-1
+empty_list = []
 
-# while(i<j):
-#     total = arr[i] + arr[j]
-#     if total == 0:
-#         pair = [arr[i], arr[j]]
+i = 0
+j = len(arr)-1
+
+while(i<j):
+    total = arr[i] + arr[j]
+    if total == 0:
+        pair = [arr[i], arr[j]]
         
-#         if pair not in empty_list:
-#             empty_list.append(pair)
-#         i+=1
-#         j-=1
+        if pair not in empty_list:
+            empty_list.append(pair)
+        i+=1
+        j-=1
 
-#     elif total < 0:
-#         i+=1
+    elif total < 0:
+        i+=1
 
-#     else:
-#         j-=1
-# print(empty_list)
+    else:
+        j-=1
+print(empty_list)
 
 
 """
